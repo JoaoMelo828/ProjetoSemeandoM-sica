@@ -1,0 +1,92 @@
+body{
+    background-color:white;
+  
+  
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 120px auto 80px 120px;
+    align-items: center;
+    
+  }
+  
+  button{
+    background-color: rgb(243, 196, 42);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    gap: 10px;
+  }
+  
+  .divisoria{
+    width: 100%; /* largura da linha */
+    height: 2px; /* altura da linha */
+    background-color: rgb(243, 196, 42); /* cor da linha */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 50%, rgb(243, 196, 42) 50%);
+    animation: disintegrate 2s linear infinite; /* duração da animação */
+  }
+  
+  @keyframes disintegrate {
+    0% {
+      transform: scaleX(0); /* linha completamente desintegrada */
+    }
+    100% {
+      transform: scaleX(1); /* linha completamente formada */
+    }
+  }
+  
+  .botões_de_acesso{
+    text-decoration: none;
+    color: rgb(243, 196, 42);
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px;
+    gap: 10px;
+  
+  
+  }
+  .rede_social{
+    text-decoration: none;
+    color:rgb(243, 196, 42);
+  
+  }
+  
+  .sobre{
+    text-decoration: none;
+    color:rgb(243, 196, 42);
+  
+  }
+
+  .Principal{
+    text-decoration: none;
+    color:rgb(243, 196, 42);
+  }
+
+.Historia{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  margin: 0 1em 0 2em;
+}
+
+  .imagem_projeto{
+    width: 50% 100%;
+  }

@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('project_20230717_1109128-01.png'); /* Substitua 'background.jpg' pelo caminho da sua imagem de fundo */
+    background-size: 1300px 800px;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background: rgba(243, 196, 42, 0.7); /* Cor de fundo com transparência */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login{
+    text-decoration: none;
+    color: rgba(243, 196, 42);
+}
