@@ -94,6 +94,7 @@ button {
 @media only screen and (max-width: 600px) {
   .container {
     grid-template-columns: 10% 30% 10% 10%;
+    grid-template-rows: auto auto;
     justify-content: center;
   }
 
