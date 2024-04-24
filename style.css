@@ -5,8 +5,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 120px auto 80px 120px;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Distribui o conteúdo em duas colunas, com um mínimo de 200px e máximo de 1fr */
+  gap: 10px; /* Espaçamento entre os elementos */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 button {
@@ -93,9 +94,7 @@ button {
 /* Media query para dispositivos com largura de tela menor que 600px (geralmente dispositivos móveis) */
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-columns: 10% 30% 10% 10%;
-    grid-template-rows: auto auto;
-    justify-content: center;
+    grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
   }
 
   .Página_principal {
