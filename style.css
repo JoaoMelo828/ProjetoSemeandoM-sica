@@ -98,6 +98,7 @@ button {
     grid-template-rows: 24px;
     justify-content: center;
     justify-items: center;
+    align-items: center;
   }
   
   .Página_principal {
