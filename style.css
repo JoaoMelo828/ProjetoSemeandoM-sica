@@ -3,11 +3,11 @@ body {
   background-color: white;
 }
 
-.container {
+.container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Distribui o conteúdo em duas colunas, com um mínimo de 200px e máximo de 1fr */
-  gap: 10px; /* Espaçamento entre os elementos */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  grid-template-columns: 120px auto 80px 120px;
+  align-items: center;
+  
 }
 
 button {
