@@ -1,17 +1,15 @@
-body{
-  background-color:white;
-
-
+/* Estilos para todos os dispositivos */
+body {
+  background-color: white;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 120px auto 80px 120px;
   align-items: center;
-  
 }
 
-button{
+button {
   background-color: rgb(243, 196, 42);
   color: white;
   padding: 15px 30px;
@@ -20,10 +18,10 @@ button{
   gap: 10px;
 }
 
-.divisoria{
-  width: 100%; /* largura da linha */
-  height: 2px; /* altura da linha */
-  background-color: rgb(243, 196, 42); /* cor da linha */
+.divisoria {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(243, 196, 42);
   position: relative;
   overflow: hidden;
 }
@@ -36,50 +34,46 @@ button{
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, transparent 50%, rgb(243, 196, 42) 50%);
-  animation: disintegrate 2s linear infinite; /* duração da animação */
+  animation: disintegrate 2s linear infinite;
 }
 
 @keyframes disintegrate {
   0% {
-    transform: scaleX(0); /* linha completamente desintegrada */
+    transform: scaleX(0);
   }
   100% {
-    transform: scaleX(1); /* linha completamente formada */
+    transform: scaleX(1);
   }
 }
 
-.botões_de_acesso{
+.botões_de_acesso {
   text-decoration: none;
   color: rgb(243, 196, 42);
   font-size: 13px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   display: grid;
   align-items: center;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 50px;
   gap: 10px;
-
-
 }
-.rede_social{
+
+.rede_social {
   text-decoration: none;
-  color:rgb(243, 196, 42);
-
+  color: rgb(243, 196, 42);
 }
 
-.sobre{
+.sobre {
   text-decoration: none;
-  color:rgb(243, 196, 42);
-
+  color: rgb(243, 196, 42);
 }
 
-.historia{
+.historia {
   text-decoration: none;
-  color:rgb(243, 196, 42);
-
+  color: rgb(243, 196, 42);
 }
 
-.Página_principal{
+.Página_principal {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -88,25 +82,29 @@ button{
   margin: 0 1em 0 2em;
 }
 
-.imagem{
-  width: 50% 100%;
+.imagem {
+  width: 50%;
 }
 
-.texto{
-  width: 50% 100%;
+.texto {
+  width: 50%;
 }
 
-@media only screen and (max-width:600px){
-  .Página_principal{
-    width: 85% 15%;
-    margin: 0 0 0 0;
+/* Media query para dispositivos com largura de tela menor que 600px (geralmente dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: auto;
+    justify-content: center;
   }
 
-  .imagem{
-    width: 0px;
+  .Página_principal {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    margin: 0;
   }
 
-  .texto{
-    width: auto;
+  .imagem,
+  .texto {
+    width: 100%;
   }
 }
