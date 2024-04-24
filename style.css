@@ -99,9 +99,9 @@ button {
   h1{
     font-size: 18px;
   }
-  
+
   .container{
-    grid-template-columns: 10% 1fr 8% 10%;
+    grid-template-columns: 10% 1fr 8% 8%;
     justify-content: center;
   }
 
