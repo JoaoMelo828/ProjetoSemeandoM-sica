@@ -94,7 +94,7 @@ button{
 
 @media only screen and (max-width:600px){
   .Página_principal{
-    width: 100%;
+    width: 75% 25%;
   }
 
   .imagem{
