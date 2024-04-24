@@ -10,9 +10,7 @@ body {
   
 }
 
-.pro{
-  font-weight: 600;
-}
+
 
 button {
   background-color: rgb(243, 196, 42);
@@ -98,7 +96,7 @@ button {
 /* Media query para dispositivos com largura de tela menor que 600px (geralmente dispositivos móveis) */
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-columns: 24px auto 16px 24px;
+    grid-template-columns: 24px 50px 16px 24px;
     grid-template-rows: auto;
     align-items: center;
   }
