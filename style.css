@@ -10,6 +10,10 @@ body {
   
 }
 
+.pro{
+  font-weight: 600;
+}
+
 button {
   background-color: rgb(243, 196, 42);
   color: white;
