@@ -92,6 +92,10 @@ button{
   width: 50% 100%;
 }
 
+.texto{
+  width: 50% 100%;
+}
+
 @media only screen and (max-width:600px){
   .Página_principal{
     width: 85% 15%;
@@ -99,6 +103,10 @@ button{
   }
 
   .imagem{
-    width: 15% 100%;
+    width: 0px;
+  }
+
+  .texto{
+    width: auto;
   }
 }
