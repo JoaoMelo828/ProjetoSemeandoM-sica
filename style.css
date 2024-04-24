@@ -101,6 +101,7 @@ button {
   }
 
   .container{
+    display: grid;
     grid-template-columns: 10% 1fr 8% 10%;
     justify-content: center;
   }
