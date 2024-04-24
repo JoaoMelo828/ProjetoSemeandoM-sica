@@ -94,8 +94,11 @@ button {
 }
 
 /* Media query para dispositivos com largura de tela menor que 600px (geralmente dispositivos móveis) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   
+  .container{
+    grid-template-columns: 1fr;
+  }
   
   .Página_principal {
     grid-template-columns: 100%;
